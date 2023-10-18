@@ -1,0 +1,1 @@
+basic_url = "http://www.impawards.com/"
