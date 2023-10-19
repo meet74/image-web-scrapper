@@ -9,7 +9,7 @@ Follow these steps to get started with Movie Scraper on your local machine:
 1. Clone or download this repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/movie-scraper.git
+    git clone https://github.com/meet74/image-web-scrapper.git
     ```
 
 2. Ensure that you have the required Python libraries installed. You can typically install these libraries using pip:
