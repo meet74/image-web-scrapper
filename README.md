@@ -15,10 +15,16 @@ Follow these steps to get started with Movie Scraper on your local machine:
 2. Ensure that you have the required Python libraries installed. You can typically install these libraries using pip:
 
     ```bash
-    pip install library-name
+    pip install requests
     ```
 
-    Replace `library-name` with the actual names of the libraries your script relies on.
+     ```bash
+    pip install random
+    ```
+
+     ```bash
+    pip install BeautifulSoup
+    ```
 
 3. Modify the script:
 
@@ -29,14 +35,14 @@ Follow these steps to get started with Movie Scraper on your local machine:
 4. Run the script using the following command:
 
     ```bash
-    python movie_scraper.py
+    python scraper.py
     ```
 
     Replace `movie_scraper.py` with the actual name of your Python script.
 
 ## Usage
 
-Once you've configured and run the script, it will start scraping movie data from the specified website. The scraped data may include details like movie title, release date, cast, ratings, and more, depending on your script's implementation.
+Once you've configured and run the script, it will start scraping movie data from the specified website. The scraped data may include details like movie poster images url
 
 Make sure you have the necessary permissions to scrape data from the website you are targeting, and ensure that you respect the website's terms of use and guidelines.
 
@@ -45,7 +51,5 @@ Make sure you have the necessary permissions to scrape data from the website you
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-
-- OpenAI - For developing ChatGPT, which provided assistance in creating this README.MD file.
 
 Feel free to customize this README.MD according to your project's specific details and requirements.
