@@ -1,6 +1,4 @@
 import requests
-import os
-import random
 from bs4 import BeautifulSoup
 from urls import basic_url
 
@@ -15,9 +13,9 @@ def scrap_movie_detal(link, arr):
     
     
     baseMovieDetailPageLink  = pTag.find("a")
-    #print(baseMovieDetailPageLink)
+    
     if baseMovieDetailPageLink:
-        #  print(baseMovieDetailPageLink["href"])
+       
          raw_base_movie_link =  link.split("com/")[1]
     
          base_movie_year = raw_base_movie_link[0:4]
@@ -25,10 +23,8 @@ def scrap_movie_detal(link, arr):
          base_movie_link = basic_url+base_movie_year+"/"
          movieDetailPageLink = base_movie_link+baseMovieDetailPageLink["href"]
          
-        #  print(base_movie_link)
-        #  print(movieDetailPageLink)
-         get_poster_link(movieDetailPageLink,base_movie_link,arr)
-         
+       
+         get_poster_link(movieDetailPageLink,base_movie_link,arr)      
          
     else:
         return "NO LINK FOUND"
@@ -42,7 +38,7 @@ def get_poster_link(link,base_link,arr):
     
     
     centerTag = soup.find("center")
-    #print(base_link+centerTag.find("img")["src"])
+
    
     imgTag = centerTag.find("img")
     
@@ -55,7 +51,5 @@ def get_poster_link(link,base_link,arr):
         return "No image Found"
        
    
-    
-#scrap_movie_detal("http://www.impawards.com/2017/aarons_blood_ver2.html")  
     
     

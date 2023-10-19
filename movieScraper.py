@@ -1,6 +1,4 @@
 import requests
-import os
-import random
 from bs4 import BeautifulSoup
 
 
@@ -21,7 +19,7 @@ def scrap_movie(link):
        
         centerLink = m.find_all("center")
         if centerLink:
-            #print(centerLink[0].find("a")["href"])
+        
             movieLinkList.append(basic_url+centerLink[0].find("a")["href"])
     
     return movieLinkList

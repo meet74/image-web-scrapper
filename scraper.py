@@ -1,5 +1,4 @@
 import requests
-import os
 import random
 from bs4 import BeautifulSoup
 from urls import basic_url
