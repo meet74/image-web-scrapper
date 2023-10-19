@@ -4,6 +4,7 @@ import random
 from bs4 import BeautifulSoup
 from urls import basic_url
 from movieScraper import scrap_movie
+from movieDetailScraper import scrap_movie_detal
 
 source = requests.get("http://www.impawards.com/alpha1.html").text
 
@@ -22,4 +23,12 @@ for li in htmlList:
 
 movieLinkListarr = scrap_movie(movieList[random.randrange(0,26)])
 
-print(movieLinkListarr)
+movie_poster_links = []
+
+
+for links in movieLinkListarr:
+    imageLink = scrap_movie_detal(links, movie_poster_links)
+    
+   
+
+print(movie_poster_links)
