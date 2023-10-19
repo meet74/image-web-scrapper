@@ -38,8 +38,6 @@ Follow these steps to get started with Movie Scraper on your local machine:
     python scraper.py
     ```
 
-    Replace `movie_scraper.py` with the actual name of your Python script.
-
 ## Usage
 
 Once you've configured and run the script, it will start scraping movie data from the specified website. The scraped data may include details like movie poster images url
